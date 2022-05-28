@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="595.0" styleClass="fondoregistro" stylesheets="@../../../estilos/inicio.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotify_prueba.Registro_Controller">
+   <children>
+      <Label layoutX="186.0" layoutY="34.0" prefHeight="32.0" prefWidth="247.0" text="Choose a pay method" textFill="#82e2fa">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.89" topOpacity="0.27" />
+         </effect>
+      </Label>
+      <Label id="tarjeta" fx:id="tarjeta" layoutX="59.0" layoutY="148.0" onMouseClicked="#tarjeta" prefHeight="31.0" prefWidth="152.0" text="CREDIT CARD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+         </effect>
+      </Label>
+      <Label id="paypal" fx:id="paypal" layoutX="413.0" layoutY="148.0" onMouseClicked="#paypal" prefHeight="31.0" prefWidth="105.0" text="PAYPAL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+         </effect>
+      </Label>
+      <Pane fx:id="tarjetapane" layoutX="53.0" layoutY="199.0" prefHeight="263.0" prefWidth="499.0" visible="false">
+         <children>
+            <TextField fx:id="tjnumber" layoutX="44.0" layoutY="48.0" promptText="Number" />
+            <TextField fx:id="monthc" layoutX="294.0" layoutY="48.0" promptText="Caducity month" />
+            <TextField fx:id="yearc" layoutX="294.0" layoutY="115.0" promptText="Caducity year" />
+            <TextField fx:id="cv" layoutX="44.0" layoutY="115.0" promptText="CV" />
+         </children>
+      </Pane>
+      <Label fx:id="tarjetacentro" layoutX="234.0" layoutY="155.0" onMouseClicked="#formasdepago" prefHeight="31.0" prefWidth="152.0" text="CREDIT CARD" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+         </effect>
+      </Label>
+      <Label fx:id="paypalcentro" layoutX="257.0" layoutY="155.0" prefHeight="31.0" prefWidth="105.0" text="PAYPAL" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+         </effect>
+      </Label>
+      <Pane fx:id="paypalpane" layoutX="53.0" layoutY="199.0" prefHeight="184.0" prefWidth="499.0" visible="false">
+         <children>
+            <TextField fx:id="email_paypal" layoutX="168.0" layoutY="97.0" promptText="Email" />
+            <Label fx:id="tarjeta2" layoutX="162.0" layoutY="24.0" onMouseClicked="#tarjeta" prefHeight="31.0" prefWidth="175.0" text="Insert your email " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="552.0" layoutY="4.0" onMouseClicked="#cerrarPago" prefHeight="21.0" prefWidth="33.0" text="Back" textFill="WHITE" />
+      <Button layoutX="242.0" layoutY="419.0" mnemonicParsing="false" onMouseClicked="#abrirRegistroPremium" prefHeight="35.0" prefWidth="105.0" styleClass="register" text="Enter" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="431.0" prefWidth="876.0" styleClass="fondoregistro" stylesheets="@../../../estilos/inicio.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotify_prueba.Registro_Controller">
+   <children>
+      <Pane id="premiumMes" layoutX="308.0" layoutY="72.0" onMouseClicked="#formasdepago" prefHeight="329.0" prefWidth="260.0" styleClass="bordeplanes">
+         <children>
+            <Label layoutX="86.0" layoutY="21.0" mouseTransparent="true" prefHeight="21.0" prefWidth="88.0" text="PREMIUM" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="70.0" mouseTransparent="true" prefHeight="16.0" prefWidth="73.0" text="\$5'99" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+               </effect>
+            </Label>
+            <Label layoutX="104.0" layoutY="189.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="No more adds" textFill="WHITE" />
+            <Label layoutX="104.0" layoutY="226.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="Music offline" textFill="WHITE" />
+            <Label layoutX="104.0" layoutY="266.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="Download music" textFill="WHITE" />
+            <Label layoutX="28.0" layoutY="106.0" mouseTransparent="true" prefHeight="26.0" prefWidth="218.0" text="This plan offers one month  " textFill="#ffffff80" />
+            <Label layoutX="33.0" layoutY="130.0" mouseTransparent="true" prefHeight="26.0" prefWidth="193.0" text="of Spotify premium" textFill="#ffffff80" />
+         </children>
+      </Pane>
+      <Pane id="premiumAño" layoutX="592.0" layoutY="72.0" onMouseClicked="#formasdepago" prefHeight="329.0" prefWidth="260.0" styleClass="bordeplanes">
+         <children>
+            <Label layoutX="83.0" layoutY="21.0" mouseTransparent="true" prefHeight="21.0" prefWidth="95.0" text="PREMIUM" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="69.0" mouseTransparent="true" prefHeight="26.0" prefWidth="88.0" text="\$69'99" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#54ccff" height="45.29" radius="19.11" width="33.15" />
+               </effect>
+            </Label>
+            <Label layoutX="104.0" layoutY="189.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="No more adds" textFill="WHITE" />
+            <Label layoutX="104.0" layoutY="225.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="Music offline" textFill="WHITE" />
+            <Label layoutX="104.0" layoutY="266.0" mouseTransparent="true" prefHeight="16.0" prefWidth="109.0" text="Download music" textFill="WHITE" />
+            <Label layoutX="42.0" layoutY="106.0" mouseTransparent="true" prefHeight="26.0" prefWidth="218.0" text="This plan offers a complete  " textFill="#ffffff80" />
+            <Label layoutX="42.0" layoutY="132.0" mouseTransparent="true" prefHeight="26.0" prefWidth="218.0" text="year of Spotify premium" textFill="#ffffff80" />
+         </children>
+      </Pane>
+      <Label layoutX="295.0" layoutY="26.0" prefHeight="21.0" prefWidth="275.0" text="Choose the plan that you want" textFill="#82e2fa">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Reflection fraction="0.89" topOpacity="0.27" />
+         </effect>
+      </Label>
+      <Pane id="free" layoutX="21.0" layoutY="72.0" onMouseClicked="#abrirRegistroFree" prefHeight="329.0" prefWidth="260.0" styleClass="bordeplanes">
+         <children>
+            <Label layoutX="102.0" layoutY="23.0" mouseTransparent="true" prefHeight="16.0" prefWidth="73.0" text="FREE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="64.0" mouseTransparent="true" prefHeight="26.0" prefWidth="193.0" text="Enjoy of the simple plan of " textFill="#ffffff80" />
+            <Label layoutX="110.0" layoutY="163.0" mouseTransparent="true" prefHeight="16.0" prefWidth="40.0" text="Adds" textFill="WHITE" />
+            <Label layoutX="34.0" layoutY="90.0" mouseTransparent="true" prefHeight="26.0" prefWidth="193.0" text="Spotify with ur free account" textFill="#ffffff80" />
+            <Label layoutX="66.0" layoutY="216.0" mouseTransparent="true" prefHeight="16.0" prefWidth="127.0" text="Music online only" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Label layoutX="836.0" layoutY="4.0" onMouseClicked="#cerrarPlanes" prefHeight="21.0" prefWidth="33.0" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="538.0" prefWidth="476.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotify_prueba.Letra_Controller">
+   <children>
+      <TextArea fx:id="txtarea" editable="false" layoutX="14.0" layoutY="11.0" prefHeight="518.0" prefWidth="444.0" />
+   </children>
+   
+</AnchorPane>

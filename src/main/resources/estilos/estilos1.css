@@ -1,0 +1,86 @@
+
+//CENTRO
+.search{
+-fx-background-color:transparent;
+-fx-border-radius:15;
+-fx-background-radius:15;
+-fx-border-color:#5cb2ff;
+}
+.BorderPane{
+-fx-background-color:#151515;
+
+}
+.exit{
+-fx-color:#151515;
+
+}
+.barra{
+    -fx-background-color:#000000;
+    -fx-effect: innershadow( gaussian, rgba(241, 206, 251, 1 ), 1, 0, 0, 2 );
+}
+
+
+}
+.botonmenu:hover{
+  -fx-background-color:transparent;
+  -fx-text-fill:#006ccb;
+}
+
+
+Button{
+-fx-background-color:transparent;
+
+
+}
+//BORDES
+
+.bordebarraizq{
+-fx-border-color:#5cb2ff;
+-fx-border-width:0 2 0 0;
+}
+.bordebarrader{
+-fx-border-color:#5cb2ff;
+-fx-border-width:0 0 0 2;
+}
+.bordeplay{
+-fx-border-color:#5cb2ff;
+-fx-border-width:2 0 0 0;
+}
+
+
+
+//INICIO//
+
+.fondo{
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+ }
+
+
+-fx-background-color:#2b1839;
+}
+
+.premiumbutton{
+
+-fx-background-radius:30;
+-fx-background-color:#ffffff;
+-fx-text-color:black;
+-fx-effecto:none;
+
+}
+
+.imagen:hover{
+-fx-effect: innershadow(gaussian, rgba(255, 255, 255, 0.5), 50, 0.3 , 5, 5);
+}
+
+
+
+
+
+
+

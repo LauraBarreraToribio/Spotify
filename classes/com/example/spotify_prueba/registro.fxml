@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="363.0" prefWidth="527.0" styleClass="fondoregistro" stylesheets="@../../../estilos/inicio.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotify_prueba.Registro_Controller">
+   <children>
+      <Pane layoutX="9.0" layoutY="9.0" prefHeight="344.0" prefWidth="509.0" styleClass="borde3">
+         <children>
+            <Label layoutX="43.0" layoutY="216.0" prefHeight="16.0" prefWidth="57.0" text="Gender" textFill="WHITE" />
+            <TextField fx:id="email" layoutX="43.0" layoutY="157.0" promptText="Email" />
+            <TextField fx:id="username" layoutX="43.0" layoutY="49.0" promptText="Username" />
+            <TextField fx:id="country" layoutX="43.0" layoutY="103.0" promptText="Country" />
+            <TextField fx:id="cp" layoutX="272.0" layoutY="157.0" promptText="Postal code" />
+            <TextField fx:id="password" layoutX="272.0" layoutY="103.0" promptText="Password" />
+            <Button layoutX="324.0" layoutY="272.0" mnemonicParsing="false" onAction="#registrarUsuario" prefHeight="34.0" prefWidth="138.0" styleClass="register" text="Register" />
+            <DatePicker fx:id="fecha" layoutX="272.0" layoutY="49.0" prefHeight="35.0" prefWidth="152.0" promptText="Birthday" />
+            <ToggleButton fx:id="genero1" layoutX="109.0" layoutY="211.0" mnemonicParsing="false" onAction="#generoElegido" style="-fx-background-color: transparent;" text="M" textFill="WHITE" />
+            <ToggleButton fx:id="genero2" layoutX="156.0" layoutY="211.0" mnemonicParsing="false" onAction="#generoElegido" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: transparent;" text="F" textFill="WHITE" />
+            <Label layoutX="462.0" layoutY="4.0" onMouseClicked="#atrasRegistro" prefHeight="21.0" prefWidth="48.0" text="Back" textFill="WHITE" />
+            <Label fx:id="errorregistro" alignment="CENTER" layoutX="39.0" layoutY="265.0" prefHeight="42.0" prefWidth="253.0" />
+            <Label fx:id="errorUsuarioExiste" alignment="CENTER" layoutX="30.0" layoutY="269.0" prefHeight="42.0" prefWidth="253.0" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

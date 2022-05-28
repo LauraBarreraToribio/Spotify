@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="267.0" prefWidth="469.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spotify_prueba.Spotify_Controller">
+   <children>
+      <Label layoutX="80.0" layoutY="42.0" prefHeight="21.0" prefWidth="171.0" text="Nombre de la playlist" textFill="WHITE" />
+      <TextField fx:id="filtrarPlaylist" layoutX="80.0" layoutY="89.0" prefHeight="31.0" prefWidth="218.0" />
+      <Label fx:id="tituloPlaylistfiltro" layoutX="80.0" layoutY="146.0" prefHeight="43.0" prefWidth="275.0" textFill="WHITE" />
+      <Button layoutX="345.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#filtrarPlaylist" text="Buscar" />
+      <Button layoutX="178.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#añadirAPlaylist" text="Añadir" />
+   </children>
+</AnchorPane>

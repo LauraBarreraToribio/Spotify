@@ -1,0 +1,99 @@
+.table-cell{
+   -fx-background-color: #151515;
+   -fx-text-fill: white;
+   -fx-border-color: #151515;
+}
+
+//color titulos
+.table-view .column-header-background{
+    -fx-background-color: #151515;
+    -fx-text-fill: white;
+}
+
+// color titulos texto
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+// color de una fila cuando en raton se encuentra sobre la misma
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #515685;
+    -fx-text-fill: white;
+}
+
+// color de una fila seleccionada por el usuario
+.table-view:row-selection .table-row-cell:filled:selected {
+    -fx-background-color: #515685;
+
+}
+
+// color filas vacias
+.table-cell:empty, .column-header{
+   -fx-background-color: transparent;
+}
+
+// color para filas vacias
+.table-row-cell:empty, .table-cell:empty:hover {
+    -fx-background-color: transparent;
+}
+// eliminar borde de celdas en las filas vacias
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-view{
+ -fx-background-color: #151515;
+}
+
+.table-view .scroll-bar:vertical > .increment-button,
+.table-view .scroll-bar:vertical > .decrement-button {
+    -fx-padding: 0.25em 0.5em  ;
+}
+
+//scrollbar
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-shape: null;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+.table-view *.scroll-bar:vertical *.increment-arrow,
+.table-view *.scroll-bar:vertical *.decrement-arrow {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  -fx-shape: null;
+}
+
+.table-view *.scroll-bar:vertical *.increment-button,
+.table-view *.scroll-bar:vertical *.decrement-button {
+  -fx-background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+
+
+
